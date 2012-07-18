@@ -1,0 +1,84 @@
+/*
+---------------------------------------
+Skinotronic 1.0 Style Plug-in for Growl
+Author: Alain-Christian
+Web: http://www.mystady.com/
+Date: Jun 9 2009
+Note: Arsen chose the name, hahaha!
+---------------------------------------
+*/
+
+
+
+/*---:[ Normal ]:--------------------*/
+#background {
+	background-color: #000000;}
+
+body {
+	margin: 0;width: 1920px;}
+
+#icon {
+	float: left;margin: auto 30px 99% 30px;}
+
+#icon img {
+	height: 128px;margin: 32px 0 0 0;width: 128px;}
+
+#text {
+	color: #FFFFFF;font: italic normal normal 30pt Futura;padding: 0 0 20px 0;}
+
+#title {
+	color: #FFFFFF;font: normal normal normal 60pt Futura;}
+
+
+
+/*---:[ Low ]:-----------------------*/
+@-webkit-keyframes verylow {0% {} 100% {background-color: #414C22;}}
+#verylow #background {
+	-webkit-animation-direction: alternate;
+	-webkit-animation-duration: 1.3s;
+	-webkit-animation-name: verylow;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;}
+
+
+
+/*---:[ Moderate ]:------------------*/
+@-webkit-keyframes moderate {0% {} 100% {background-color: #B8A22B;}}
+#moderate #background {
+	-webkit-animation-direction: alternate;
+	-webkit-animation-duration: 1.3s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-name: moderate;
+	-webkit-animation-timing-function: ease-in-out;}
+
+
+/*---:[ High ]:----------------------*/
+#high #background {
+	-webkit-border-bottom-left-radius: 0px;
+	-webkit-border-bottom-right-radius: 129px;
+	-webkit-border-top-left-radius: 129px;
+	-webkit-border-top-right-radius: 0;
+	width: 960px;
+	background: -webkit-gradient(radial, 925 150, 1000, 1000 -800, 775, from(#47CC45), to(#000000))
+}
+#high body {
+	margin: 10px 0 10px 20px;width: 980px;}
+#high #icon {
+	margin: auto 20px 99% 20px;}
+#high #icon img {
+	margin: 0;}
+#high #text {
+	font: italic normal normal 20pt Futura;text-align: justify;width: 850px;}
+#high #title {
+	color: #47CC45;font: normal normal normal 30pt Futura;padding: 20px 0 0 0;}
+
+
+
+/*---:[ Emergency ]:-----------------*/
+@-webkit-keyframes emergency {0% {} 100% {background-color: #9C150B;}}
+#emergency #background {
+	-webkit-animation-direction: alternate;
+	-webkit-animation-duration: .8s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-name: emergency;
+	-webkit-animation-timing-function: ease-in-out;}
