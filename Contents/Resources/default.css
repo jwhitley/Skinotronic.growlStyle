@@ -14,8 +14,53 @@ Note: Arsen chose the name, hahaha!
 #background {
 	background-color: #000000;}
 
-body {
-	margin: 0;width: 1680px;}
+/* 15" Retina Macbook Pro */
+@media only screen
+and (min-device-width : 2880px) {
+  body { margin: 0;width: 2880px; }
+}
+
+/* 30" LCD */
+@media only screen
+and (min-device-width : 2560px)
+and (max-device-width : 2879px) {
+  body { margin: 0;width: 2560px; }
+}
+
+/* HDTV */
+@media only screen
+and (min-device-width : 1920px)
+and (max-device-width : 2459px) {
+  body { margin: 0;width: 1920px; }
+}
+
+/* 15" high-res/antiglare Macbook Pro */
+@media only screen
+and (min-device-width : 1680px)
+and (max-device-width : 1919px) {
+  body { margin: 0;width: 1680px; }
+}
+
+/* 15" standard Macbook Pro and 13" Macbook Air*/
+@media only screen
+and (min-device-width : 1440px)
+and (max-device-width : 1679px) {
+  body { margin: 0;width: 1440px; }
+}
+
+/* 11" Macbook Air */
+@media only screen
+and (min-device-width : 1366px)
+and (max-device-width : 1439px) {
+  body { margin: 0;width: 1366px; }
+}
+
+/* 13" Macbook Pro */
+@media only screen
+and (min-device-width : 1280px)
+and (max-device-width : 1365px) {
+  body { margin: 0;width: 1280px; }
+}
 
 #icon {
 	float: left;margin: auto 30px 99% 30px;}
